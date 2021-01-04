@@ -8,7 +8,7 @@ Created on Mon Nov 18 17:19:17 2019
 
 
 class Board:
-    
+    # this class represents a board with a user-determined width and height, with each cell separated by a vertical bar 
     
     def __init__(self, height, width):
         
@@ -48,9 +48,7 @@ class Board:
 
 
     def add_checker(self, checker, col):
-        
-        """ put your docstring here
-    """
+     
         assert(checker == 'X' or checker == 'O')
         assert(0 <= col < self.width)
 
@@ -101,6 +99,8 @@ class Board:
                         checker = 'X'               
                 
     def can_add_to(self, col):
+        
+        # determines if it is possible to add the specified column
             
             if col < 0 or col > self.width - 1:
                 
@@ -204,8 +204,6 @@ class Board:
     
     def is_win_for(self, checker):
         
-        """ put your docstring here
-        """
         assert(checker == 'X' or checker == 'O')
 
         # call the helper functions and use their return values to
