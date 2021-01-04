@@ -1,9 +1,7 @@
 #
-# ps6pr5.py (Problem Set 6, Problem 5)
 #
 # TT Securities    
 #
-# Computer Science 111
 #
 
 import math
